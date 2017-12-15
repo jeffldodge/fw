@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-
+html{
+	height:100%;
+}
 body{
 	height: 100%;
 	padding: 0;
@@ -52,34 +54,32 @@ header::after{
 	display:block;
 	clear:both;
 }
-.menu{
-	padding: 0;
-	background-color: none;
-	text-align: center;
+.navbar-nav{ 
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
-	flex:0 0 auto;
-
+}
+.main-container{
+	height:100vh;
 }
 
-nav ul ul{
-	display: none;
+.home-main-section,
+.carousel,
+.item,
+.active,
+.carousel-inner,.carousel-item{
+    height: 100%;
 }
 
-nav ul li:hover>ul{
+.carousel-inner,.carousel-item,.carousel {
+	width:100%;
+}
+.carousel-item>a{
+	background-size:cover;
+	width:100%;
+	height:100%;
 	display:block;
-} 
-
-/*This causes the list items inside the list to appear once you hover over it*/
-
-nav ul{
-	display:flex;
-	flex-flow:row;
-	border-radius:10px;
-	list-style:none;
-	position:relative;
+	background-position:center;
 }
-
 .main-section, .section-holder{
 	flex:1 1 auto;
 }
@@ -97,18 +97,7 @@ nav ul{
 	background:#111;
 }
 
-nav>ul>li{
-	flex:none;
-	border-right:1px solid white;
-	position:relative;
-}
-
-nav ul li:last-child{
-	border-right: none;
-}
-
-
-nav>ul>li:hover>a{
+.navbar-item:hover>a{
 	color:#111;
 	transition:background,color .3s;
 	background:white;
@@ -116,15 +105,15 @@ nav>ul>li:hover>a{
 	text-decoration-color:#999;
 }
 
-
-nav ul ul li:hover{
-	background: #585c69;
-	transition:background .15s;
+.navbar-nav .dropdown-menu{
+	border-radius:0;
+	border: #16181b;
 }
 
-nav ul ul li:hover>a{
+.navbar-nav .dropdown-item:hover{
+	background: #585c69;
+	transition:background,color .15s;
 	color: white;
-	transition:color .15s;
 }
 
 nav ul ul{
@@ -150,27 +139,27 @@ nav ul ul li{
 nav ul ul li:last-child{
 	border-bottom:none;
 }
-nav ul ul li a{
+.navbar-nav .dropdown-item{
 	text-transform:none;
 	letter-spacing:normal;
 	font-size:13px;
-	color:black;
-	display:block;
-	padding: 7px 15px;
+	color:#16181b;
+	font-weight:100;
 }
 
 nav ul ul li a:hover{
 	text-decoration: none;
 }
-
-nav ul a{
+.navbar-brand{
+	padding:0;
+}
+.nav-item{
 	text-decoration: none;
 	font-weight:100;
 	text-transform: uppercase;
 	color: white;
-	padding: 2px 13px;
+	padding: 0 2px;
 	letter-spacing:3px;
-	display:inline-block;
 }
 .main-image{
 	background-color:#fff;
@@ -455,4 +444,36 @@ a.link:hover{
 }
 .skills-list li{
 	padding:20px 32px;
+}
+.navbar{
+	padding:0;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-toggler{
+	border-color:rgba(255,255,255,0.5);
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+.header menu>li>a{
+	text-decoration: none;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: white;
+	padding: 2px 13px;
+	letter-spacing: 3px;
+	display: inline-block;
+}
+.header menu>li{
+	flex: none;
+	border-right: 1px solid white;
+	position: relative;
+	font-size:13px;
+}
+.header menu>li:last-child{
+	border-right: none;
 }

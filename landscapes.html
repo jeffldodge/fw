@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Untitled Document</title>
-	<link href="_css/style.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 	<!--header font-->
@@ -12,168 +11,128 @@
 	<link href="_scripts/themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
 		<script src="_scripts/themes/4/js-image-slider.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="_css/style.css" type="text/css" rel="stylesheet">
+
 	<!--Link to lightbox assets-->
 	<link rel="stylesheet" href="_scripts/lightbox2-master/css/lightbox.css">
 </head>
 
 <body>
-	<header>
-		<section>
-			<a href="index.html"><span class="logo">Kim Dodge<br />Photography</span></a>
-			<nav class="menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Galleries</a>
-					<ul>
-						<li><a href="landscapes.html">Landscapes</a></li>
-						<li><a href="people.html">People</a></li>
-						<li><a href="animals.html">Animals</a></li>
-						<li><a href="graphicdesign.html">Graphic Design</a></li>
-						<li><a href="other.html">Other</a></li>
-					</ul>
-				</li>	
-				<li><a href="video.html">Video</a></li>
-				<li><a href="aboutme.html">About Me</a></li>
-				
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		</section>
-	</header>
-	<section class="gallery-main-section">
-		
-		<!--main image-->
-		<div class="main-image">
-			<img src="_images/34598597591_927cbd8b07_k.jpg" alt="Yellowstone National Park Photo"></img>
-			<div class="page-name">
-				<div>Landscapes</div>
+	<div class="container-fluid main-container p-0 d-flex flex-column">
+		<header></header>
+		<section class="gallery-main-section">
+			
+			<!--main image-->
+			<div class="main-image">
+				<img src="_images/34598597591_927cbd8b07_k.jpg" alt="Yellowstone National Park Photo"></img>
+				<div class="page-name">
+					<div>Landscapes</div>
+				</div>
 			</div>
-		</div>
-		<ul class="image-thumbs">
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM9980-HDR.jpg" data-lightbox="gallery-set" data-title="Yellowstone National Park">
-				<img class="gallery-image" src="_images/_KIM9980-HDR-thumb.png" alt="Background Image"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/A-Moment-in-time-Amateur-Contest.jpg" data-lightbox="gallery-set" data-title="A Moment in Time">
-					<img class="gallery-image" src="_images/A-Moment-in-time-Amateur-Contest-thumb.jpg" alt="Old Shed and Cart Image"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM0002-BW.jpeg" data-lightbox="gallery-set" data-title="Living Wasteland">
-					<img class="gallery-image" src="_images/_KIM0002-BW-thumb.jpg" alt="Yellowstone National Park Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/DSC_0147_02 Sepia.jpg" data-lightbox="gallery-set" data-title="Flooded Farmland">
-						<img class="gallery-image" src="_images/DSC_0147_02 Sepia-thumb.png" alt="Salt Lake Flooding Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM0029.jpeg" data-lightbox="gallery-set" data-title="Yellowstone National Park Salt Flats">
-						<img class="gallery-image" src="_images/_KIM0029-thumb.png" alt="Yellowstone National Park Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM0114.jpg" data-lightbox="gallery-set" data-title="Yellowstone Back Country">
-					<img class="gallery-image" src="_images/_KIM0114-thumb.png" alt="Back Country Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM00961.jpg" data-lightbox="gallery-set" data-title="Yellowstone National Park">
-						<img class="gallery-image" src="_images/_KIM00961-thumb.png" alt="Yellowstone National Park Photo"/>
+			<ul class="image-thumbs">
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM9980-HDR.jpg" data-lightbox="gallery-set" data-title="Yellowstone National Park">
+					<img class="gallery-image" src="_images/_KIM9980-HDR-thumb.png" alt="Background Image"/>
 					</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM6706_2.jpg" data-lightbox="gallery-set" data-title="Mormon Row, Yellowstone National Park">
-					<img class="gallery-image" src="_images/_KIM6706_2-thumb.png" alt="Mormon Row Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/DSC_1347.jpg" data-lightbox="gallery-set" data-title="Idaho Falls Temple and the Snake River">
-						<img class="gallery-image" src="_images/DSC_1347-thumb.jpg" alt="Idaho Falls Temple Photo"/>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/A-Moment-in-time-Amateur-Contest.jpg" data-lightbox="gallery-set" data-title="A Moment in Time">
+						<img class="gallery-image" src="_images/A-Moment-in-time-Amateur-Contest-thumb.jpg" alt="Old Shed and Cart Image"/>
 					</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM6739.jpg" data-lightbox="gallery-set" data-title="Mormon Row in Yellowstone National Park">
-						<img class="gallery-image" src="_images/_KIM6739-thumb.png" alt="Mormon Row Photo, Yellowstone National Park"/>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM0002-BW.jpeg" data-lightbox="gallery-set" data-title="Living Wasteland">
+						<img class="gallery-image" src="_images/_KIM0002-BW-thumb.jpg" alt="Yellowstone National Park Photo"/>
 					</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM6786COLOR2.jpg" data-lightbox="gallery-set" data-title="Grand Teton National Park">
-						<img class="gallery-image" src="_images/_KIM6786COLOR2-thumb.png" alt="Grand Teton National Park Photo"/>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/DSC_0147_02 Sepia.jpg" data-lightbox="gallery-set" data-title="Flooded Farmland">
+							<img class="gallery-image" src="_images/DSC_0147_02 Sepia-thumb.png" alt="Salt Lake Flooding Photo"/>
 					</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM7967-2.jpg" data-lightbox="gallery-set" data-title="Idaho Back Country Charcoal Kilns">
-				<img class="gallery-image" src="_images/_KIM7967-2-thumb.png" alt="Charcoal Kilns, Idaho Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM6697-2.jpg" data-lightbox="gallery-set" data-title="Grand Teton National Park Area">
-				<img class="gallery-image" src="_images/_KIM6697-2-thumb.png" alt="Grand Teton National Park Area Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM8227.jpg" data-lightbox="gallery-set" data-title="Farmers Graveyard, Idaho">
-					<img class="gallery-image" src="_images/_KIM8227-thumb.png" alt="Farmers Graveyard Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM9493-HDR.jpg" data-lightbox="gallery-set" data-title="Mesa Falls, Idaho">
-				<img class="gallery-image" src="_images/_KIM9493-HDR-thumb.png" alt="Mesa Falls Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/_KIM9836.jpg" data-lightbox="gallery-set" data-title="Idaho Back Country">
-				<img class="gallery-image" src="_images/_KIM9836-thumb.png" alt="Rock Formation Photo"/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/DSC_7423.jpg" data-lightbox="gallery-set" data-title="Highway 26 Bridge on the way to Jackson, WY">
-				<img class="gallery-image" src="_images/DSC_7423-thumb.png" alt=""/>
-				</a>
-			</li>
-			<li>
-				<a class="gallery-image-link" href="_images/KIM_2269.jpg" data-lightbox="gallery-set" data-title="Steam Engine crossing the American Falls Train Bridge">
-				<img class="gallery-image" src="_images/KIM_2269-thumb.jpg" alt="Train Crossing Bridge"/>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<footer>
-		<section class="footer-content">		
-			<ul class="social-icons">
-				<li>
-					<a href=" https://www.flickr.com/people/kimmrdodge/" class="fa fa-flickr" target="new"></a>	
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/kim-dodge-4a70588a/" class="fa fa-linkedin" target="new"></a>
+					<a class="gallery-image-link" href="_images/_KIM0029.jpeg" data-lightbox="gallery-set" data-title="Yellowstone National Park Salt Flats">
+							<img class="gallery-image" src="_images/_KIM0029-thumb.png" alt="Yellowstone National Park Photo"/>
+					</a>
 				</li>
 				<li>
-					<a href="https://www.instagram.com/kimmrdodge" class="fa fa-instagram" target="new"></a>
+					<a class="gallery-image-link" href="_images/_KIM0114.jpg" data-lightbox="gallery-set" data-title="Yellowstone Back Country">
+						<img class="gallery-image" src="_images/_KIM0114-thumb.png" alt="Back Country Photo"/>
+					</a>
 				</li>
 				<li>
-					<a href="https://twitter.com/krdodge" class="fa fa-twitter" target="new"></a>
+					<a class="gallery-image-link" href="_images/_KIM00961.jpg" data-lightbox="gallery-set" data-title="Yellowstone National Park">
+							<img class="gallery-image" src="_images/_KIM00961-thumb.png" alt="Yellowstone National Park Photo"/>
+						</a>
 				</li>
 				<li>
-					<a href="https://plus.google.com/u/0/103495968390427229096" class="fa fa-google" target="new"></a>
+					<a class="gallery-image-link" href="_images/_KIM6706_2.jpg" data-lightbox="gallery-set" data-title="Mormon Row, Yellowstone National Park">
+						<img class="gallery-image" src="_images/_KIM6706_2-thumb.png" alt="Mormon Row Photo"/>
+					</a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/kim.dodge.94" class="fa fa-facebook" target="new"></a>
+					<a class="gallery-image-link" href="_images/DSC_1347.jpg" data-lightbox="gallery-set" data-title="Idaho Falls Temple and the Snake River">
+							<img class="gallery-image" src="_images/DSC_1347-thumb.jpg" alt="Idaho Falls Temple Photo"/>
+						</a>
 				</li>
 				<li>
-					<a href="mailto:dodgkim@isu.edu" class="fa fa-envelope"></a>
-</li>
+					<a class="gallery-image-link" href="_images/_KIM6739.jpg" data-lightbox="gallery-set" data-title="Mormon Row in Yellowstone National Park">
+							<img class="gallery-image" src="_images/_KIM6739-thumb.png" alt="Mormon Row Photo, Yellowstone National Park"/>
+						</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM6786COLOR2.jpg" data-lightbox="gallery-set" data-title="Grand Teton National Park">
+							<img class="gallery-image" src="_images/_KIM6786COLOR2-thumb.png" alt="Grand Teton National Park Photo"/>
+						</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM7967-2.jpg" data-lightbox="gallery-set" data-title="Idaho Back Country Charcoal Kilns">
+					<img class="gallery-image" src="_images/_KIM7967-2-thumb.png" alt="Charcoal Kilns, Idaho Photo"/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM6697-2.jpg" data-lightbox="gallery-set" data-title="Grand Teton National Park Area">
+					<img class="gallery-image" src="_images/_KIM6697-2-thumb.png" alt="Grand Teton National Park Area Photo"/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM8227.jpg" data-lightbox="gallery-set" data-title="Farmers Graveyard, Idaho">
+						<img class="gallery-image" src="_images/_KIM8227-thumb.png" alt="Farmers Graveyard Photo"/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM9493-HDR.jpg" data-lightbox="gallery-set" data-title="Mesa Falls, Idaho">
+					<img class="gallery-image" src="_images/_KIM9493-HDR-thumb.png" alt="Mesa Falls Photo"/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/_KIM9836.jpg" data-lightbox="gallery-set" data-title="Idaho Back Country">
+					<img class="gallery-image" src="_images/_KIM9836-thumb.png" alt="Rock Formation Photo"/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/DSC_7423.jpg" data-lightbox="gallery-set" data-title="Highway 26 Bridge on the way to Jackson, WY">
+					<img class="gallery-image" src="_images/DSC_7423-thumb.png" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a class="gallery-image-link" href="_images/KIM_2269.jpg" data-lightbox="gallery-set" data-title="Steam Engine crossing the American Falls Train Bridge">
+					<img class="gallery-image" src="_images/KIM_2269-thumb.jpg" alt="Train Crossing Bridge"/>
+					</a>
+				</li>
 			</ul>
 		</section>
-	</footer>
+		<footer></footer>
+	</div>
 
-
-
-
-
+	<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="./_scripts/main.js"></script>
+	<!--©Kim Dodge 2017-->
 
 	<!--Include this line in your HTML HERE-->
 	<script src="_scripts/lightbox2-master/js/lightbox-plus-jquery.min.js"></script>
