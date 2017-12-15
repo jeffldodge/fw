@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox Example w/Comments</title>
+  
+  <!--Include this line in your HTML-->
+  <link rel="stylesheet" href="css/lightbox.css">
+  <!--End Include-->
+    
+</head>
+<body>
+
+  <section>
+    <h3>Two Individual Images</h3>
+    <div>
+   	<!--Edit the href & src data in the code to link to your images-->
+    <!--Note that you should have two versions of each image: the thumbnail and the fullsize-->
+      <a class="example-image-link" href="images/image-3.jpg" data-lightbox="example-1"><img class="example-image" src="images/thumb-3.jpg" alt="image-1" /></a>
+      <a class="example-image-link" href="images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="images/thumb-2.jpg" alt="image-1"/></a>
+    </div>
+
+    <hr />
+	
+    <!--You aren't limited/restricted to 4 images - you can add/remove at will. The javascript will automatically adjust-->
+    <h3>A Four Image Set</h3>
+    <div>
+      <!--Edit the data-title to change the caption information-->
+      <a class="example-image-link" href="images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thumb-3.jpg" alt=""/></a>
+      <a class="example-image-link" href="images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/thumb-4.jpg" alt="" /></a>
+      <a class="example-image-link" href="images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="images/thumb-5.jpg" alt="" /></a>
+      <a class="example-image-link" href="images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="images/thumb-6.jpg" alt="" /></a>
+    </div>    
+  </section>
+
+  <section>
+    
+    
+    <p>
+    <!--You don't have to include this in the visible portion of the page, but you must provide this information somewhere in your code - great use for a comment-->
+      For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+      <!--End Citation information-->
+    </p>
+    
+  </section>
+<!--Include this line in your HTML HERE-->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<!--End Include-->
+</body>
+</html>
