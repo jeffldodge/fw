@@ -1,8 +1,13 @@
 <!doctype html>
 <html>
+<!--
+	Created by Kim Dodge, 2017
+	Last edited 12/15/2017
+	This page allows visitors to get in touch with Kim!	
+-->
 <head>
 	<meta charset="UTF-8">
-	<title>Untitled Document</title>
+	<title>Contact - Kim Dodge Photography</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 	<!--header font-->
@@ -118,10 +123,11 @@
     </div>
 	
 	<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
-		<script src="./_scripts/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="./_scripts/main.js"></script>
+	<!--©Kim Dodge 2017-->
 </body>
 </html>
