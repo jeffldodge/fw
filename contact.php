@@ -21,7 +21,7 @@
     $subscribe = $_POST['subscribe'];
     $use = $_POST['use'];
     $from = 'dodgkim@isu.edu';
-    $to = 'carrdavi@isu.edu,dodgkim@isu.edu';
+    $to = 'dodgkim@isu.edu';
     $subject = 'Contact Form Submission';
 	/*This is formatted to make the email sent to me include line breaks \n for easier reading*/
     $body = "Name: $name \n email: $email \n referral_method: $referral_method \n comments: $comments \n subscribe: $subscribe \n use: $use ";
@@ -50,7 +50,7 @@
                 <div class="row">
                     
                     <div class="col-12 col-lg-6 col-xl-4 contact-info">
-                            <form method="post" action="form.php" enctype="multipart/form-data">
+                            <form method="post" action="contact.php" enctype="multipart/form-data">
                                 <div class="form-group">
                                    <!--input tells the page that content will be entered by the user, for=tells the page that this is a form, the name must always use _underscore if you use two words, no spaces allowed. For name, you choose a name that you will also put in the php, this is what makes your php work.  Class is what is styled from the bootstrap css, this is created by bootstrap.  id must also be in camelCase (you can choose any name you like just make sure it makes sense). Placeholder is text that can be in a form field as an example for users to follow, it will be delted when they start typing. You can also put custom labels that will show up on the page after the label tag but before the closing label tag.-->
                                     <label class="col-form-label" for="nameInput">Your Name</label>
