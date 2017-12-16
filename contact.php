@@ -37,68 +37,70 @@
 </head>
 
 <body>
+    <div class="container-fluid main-container p-0 d-flex flex-column">
+
         <!--includes header from header file-->
         <header></header>
         <div class="section-holder contact-section-holder">
-<section class="main-section">
-        <h1>[ Contact Me ]</h1>
-        <!--start contact me form-->
-        <div class="contact-info">
-            <form method="post" action="contact.php">
-                <div class="form-group">
-                    <label class="col-form-label" for="nameInput">Your Name</label>
-                    <input name="name" type="text" class="form-control" id="nameInput" placeholder="Jane Doe">
+            <section class="main-section">
+                <h1>[ Contact Me ]</h1>
+                <!--start contact me form-->
+                <div class="contact-info">
+                    <form method="post" action="contact.php">
+                        <div class="form-group">
+                            <label class="col-form-label" for="nameInput">Your Name</label>
+                            <input name="name" type="text" class="form-control" id="nameInput" placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="emailInput">Email address</label>
+                            <input name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="jane.doe@gmail.com">
+                            <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+                        </div>
+                        <strong>How did you hear about my website?</strong>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="referral_method" class="form-check-input" type="radio" id="referralWeb" value="search">
+                                Web Search
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="referral_method" class="form-check-input" type="radio" id="referralFriend" value="friend">
+                                Friend
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="referral_method" class="form-check-input" type="radio" id="referralOther" value="other">
+                                Other
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="commentBox">Do you have any questions or comments you would like to share with me?</label>
+                            <textarea name="comments" class="form-control" id="commentBox" rows="3" placeholder="I love your photos!  Where can I purchase prints?"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="subscribe" class="form-check-input" type="checkbox" id="subscribe" value="subscribe">
+                            Notify me when you add photos
+                            </label>
+                        </div>
+                        <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Submit">
+                    </form>
+                    
+                    <ul>
+                        <li><strong>208.497.8409</strong></li>
+                        <li>Kim Dodge</li>
+                        <li><a class="download-link" href="_docs/resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <span>Resume (PDF)</span></a></li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label class="col-form-label" for="emailInput">Email address</label>
-                    <input name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="jane.doe@gmail.com">
-                    <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
-                </div>
-                <strong>How did you hear about my website?</strong>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input name="referral_method" class="form-check-input" type="radio" id="referralWeb" value="search">
-                        Web Search
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input name="referral_method" class="form-check-input" type="radio" id="referralFriend" value="friend">
-                        Friend
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input name="referral_method" class="form-check-input" type="radio" id="referralOther" value="other">
-                        Other
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="col-form-label" for="commentBox">Do you have any questions or comments you would like to share with me?</label>
-                    <textarea name="comments" class="form-control" id="commentBox" rows="3" placeholder="I love your photos!  Where can I purchase prints?"></textarea>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input name="subscribe" class="form-check-input" type="checkbox" id="subscribe" value="subscribe">
-                       Notify me when you add photos
-                    </label>
-                </div>
-                <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Submit">
-            </form>
-            
-            <ul>
-                <li><strong>208.497.8409</strong></li>
-                <li>Kim Dodge</li>
-                <li><a class="download-link" href="_docs/resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <span>Resume (PDF)</span></a></li>
-            </ul>
+                    
+            </section>
         </div>
-            
-    </section>
+        <!--includes footer from footer file-->
+        <footer></footer>
+        <!--Include this line in your HTML HERE-->  
     </div>
-    <!--includes footer from footer file-->
-    <footer></footer>
-    <!--Include this line in your HTML HERE-->
-
 	
 	<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
