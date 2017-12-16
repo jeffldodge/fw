@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $.get('./header.html',function(data){
         $('header').html(data);
-        var selected=$("header [href~='"+window.location.pathname.replace("/","")+"']");
+        var url=window.location.pathname;
+        var selected=$("header [href~='"+url.substring(url.lastIndexOf('/')+1)+"']");
         selected.closest(".nav-item").addClass("selected")
         if(selected.hasClass("dropdown-item"))
         {
